@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Lab2_Templates.css" />
+    <!-- I've moved the css to a separate file, was getting messy -->
+  </head>
+  <body>
+    <template id="card-template">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title"></div>
+          <div class="card-text"></div>
+        </div>
+      </div>
+    </template>
+
+    <template id="artist-card-template">
+      <div class="artist-card">
+        <h2 class="artist-name"></h2>
+        <div class="artist-portfolio"></div>
+      </div>
+    </template>
+
+    <template id="artist-portfolio-entry-template">
+      <div class="artist-portfolio-entry">
+        <div class="artist-portfolio-title"></div>
+        <img src="" alt="" class="artist-portfolio-img" />
+      </div>
+    </template>
+
+    <div id="card-list"></div>
+
+    <script src="Lab2_Templates.js"></script>
+    <!-- I've moved the code to a separate file, was getting messy-->
+  </body>
+</html>

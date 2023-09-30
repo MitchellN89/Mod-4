@@ -1,0 +1,65 @@
+Scope
+=====
+
+To create a basic design for an app called "Spire".
+It's an app that allows mountain climbers to connect and share images for pictures they've taken from different mountain climbs.
+It also has a feature where you can list the altitude and location of the mountain the picture is taken from
+
+Pages to include
+================
+
+Login Page
+ - Forgot password page
+
+Main Feed Page
+
+Profile Page
+
+Create Post Page
+
+
+
+Login Page
+==========
+
+Email and password inputs
+Sign in button
+Sign up button
+Forgot password button
+
+Main Feed Page
+==============
+
+Cards containing;
+    Picture,
+    Caption,
+    Altitude / Location,
+    Comments dropdown section
+        Ability to make a new Comment,
+Create new post button
+Profile button
+
+Create New Post Page
+====================
+
+Picture upload box and diplay
+Location input
+Altitude input
+Caption input
+Save button
+Go Back button
+
+Profile Page
+============
+
+Picture upload box and diplay
+Display name input
+Default location input
+Save button
+Go Back button
+
+Forgot Password Page
+====================
+
+Email input
+Recover Account button

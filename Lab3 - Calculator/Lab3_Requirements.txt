@@ -1,0 +1,14 @@
+Requirements
+============
+
+1) Get data (two numbers)
+    -User inputs the 2 numbers to calculate
+
+2) Choose an operator
+    -User chooses an operator
+
+3) Get the result
+    -The equals button calculates the result of the 2 numbers against the operator
+
+4) Reset the screen
+    -The clear button resets the calculator

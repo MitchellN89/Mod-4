@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Lab3_Calculator.css" />
+  </head>
+  <body>
+    <main>
+      <div class="title-box">
+        <h1>Calculator<span class="title-feature">App</span></h1>
+        <div class="output-box">
+          <span id="calculation-string">15 + 63 =</span>
+          <h2 id="output">15</h2>
+        </div>
+      </div>
+
+      <hr />
+      <div class="controls">
+        <button onclick="reset()" class="btn btn-large">Reset</button>
+        <button onclick="inputOperator('&divide;')" class="btn btn_small">
+          &divide;
+        </button>
+
+        <button onclick="inputNumber('7')" class="btn btn_small">7</button>
+        <button onclick="inputNumber('8')" class="btn btn_small">8</button>
+        <button onclick="inputNumber('9')" class="btn btn_small">9</button>
+        <button onclick="inputOperator('&times;')" class="btn btn_small">
+          &times;
+        </button>
+
+        <button onclick="inputNumber('4')" class="btn btn_small">4</button>
+        <button onclick="inputNumber('5')" class="btn btn_small">5</button>
+        <button onclick="inputNumber('6')" class="btn btn_small">6</button>
+        <button onclick="inputMinus('&minus;')" class="btn btn_small">
+          &minus;
+        </button>
+
+        <button onclick="inputNumber('1')" class="btn btn_small">1</button>
+        <button onclick="inputNumber('2')" class="btn btn_small">2</button>
+        <button onclick="inputNumber('3')" class="btn btn_small">3</button>
+        <button onclick="inputOperator('&plus;')" class="btn btn_small">
+          &plus;
+        </button>
+
+        <button onclick="inputNumber('0')" class="btn btn-medium">0</button>
+        <button onclick="inputPeriod()" class="btn btn-small">&period;</button>
+        <button
+          onclick="calculate('&equals;')"
+          class="btn btn-small btn-equals"
+        >
+          &equals;
+        </button>
+        <!-- 
+        <button class="btn-small" onclick="clickNumber(7)">7</button>
+        <button class="btn-small" onclick="clickNumber(8)">8</button>
+        <button class="btn-small" onclick="clickNumber(9)">9</button>
+        <button class="btn-small" onclick="clickOperator('/')">/</button>
+
+        <button class="btn-small" onclick="clickNumber(4)">4</button>
+        <button class="btn-small" onclick="clickNumber(5)">5</button>
+        <button class="btn-small" onclick="clickNumber(6)">6</button>
+        <button class="btn-small" onclick="clickOperator('*')">*</button>
+
+        <button class="btn-small" onclick="clickNumber(1)">1</button>
+        <button class="btn-small" onclick="clickNumber(2)">2</button>
+        <button class="btn-small" onclick="clickNumber(3)">3</button>
+        <button class="btn-small" onclick="clickOperator('+')">+</button>
+
+        <button class="btn-large" onclick="clickNumber(0)">0</button>
+        <button class="btn-small" onclick="clickPoint()">.</button>
+        <button class="btn-small" onclick="clickMinus()">-</button>
+
+        <button class="btn-large" onclick="resetCalc()">Clear</button>
+        <button class="btn-large" onclick="calculate()">Equals</button> -->
+      </div>
+    </main>
+    <script src="Lab3_Calculator.js"></script>
+  </body>
+</html>

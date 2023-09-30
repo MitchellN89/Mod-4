@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* MY CSS BELOW */
+
+main {
+  width: 360px;
+  height: 728px;
+  background-color: #efefef;
+}
+
+h1 {
+  padding-top: 50px;
+  margin: 0 auto auto 30px;
+  width: 250px;
+  height: 50px;
+  font: normal normal 900 36px / normal "Roboto";
+}
+
+.title-feature {
+  color: #7c99b4;
+}
+
+hr {
+  margin: auto;
+  width: 340px;
+}
+
+.output-box {
+  width: 300px;
+  height: 90px;
+  background-color: #dedede;
+  margin: 21px auto 28px 30px;
+  overflow: hidden;
+}
+
+#calculation-string {
+  display: inline-block;
+  width: 292px;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+
+  margin: 4px 4px 0;
+}
+
+h2 {
+  height: 70px;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.controls {
+  margin: 27px 30px auto 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20.5px 6px;
+}
+
+.btn {
+  height: 70.5px;
+  border-radius: 35.25px;
+  border: none;
+  background-color: #dedede;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12pt;
+  transition: background-color 150ms;
+}
+
+.btn:hover {
+  background-color: #acacac;
+}
+
+.btn:active {
+  background-color: #225d9b;
+  color: #efefef;
+}
+
+.btn-small {
+  width: 70.5px;
+}
+
+.btn-medium {
+  width: 147px;
+  grid-column: span 2;
+}
+
+.btn-large {
+  width: 223.5px;
+  grid-column: span 3;
+}
+
+.btn-equals {
+  background-color: #225d9b;
+  color: #efefef;
+}
+
+.btn-equals:hover {
+  background-color: #173f69;
+}
+
+.btn-equals:active {
+  background-color: #225d9b;
+}

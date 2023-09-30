@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fetch / Axios Cards</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section class="mt-3">
+        <h2>Fetch / Axios / XMLHttpRequest</h2>
+        <form id="form-method" class="form-group" action="">
+          <label for="input-limit">Limit</label>
+          <input
+            class="form-control mt-2"
+            type="text"
+            id="input-limit"
+            value="10"
+          />
+          <div class="form-check mt-2">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="input-use-fetch"
+              name="method"
+              checked
+            />
+            <label for="input-use-fetch">Use Fetch</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="input-use-axios"
+              name="method"
+            />
+            <label for="input-use-axios">Use Axios</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              id="input-use-XMLHttpRequest"
+              name="method"
+            />
+            <label for="input-use-XMLHttpRequest">Use XMLHttpRequest</label>
+          </div>
+          <button class="btn btn-primary mt-2">Populate</button>
+        </form>
+        <div class="container mt-2">
+          <div id="card-container" class="row justify-content-center"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <template id="card-template">
+    <div class="col-3">
+      <div class="card m-2" style="max-width: 400px">
+        <div class="card-body">
+          <h3 class="card-title"></h3>
+          <p class="card-content"></p>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="Lab6 - Fetch Data.js"></script>
+</html>

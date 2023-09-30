@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 4 - Bootstrap!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My (one) Pictures!</a>
+      </div>
+    </nav>
+
+    <div class="container align-items-center d-flex" style="min-height: calc(100vh - 56px);">
+      <div id="card-list" class="row justify-content-center">
+    </div>
+
+    <!-- My template below -->
+    <template id="card-template">
+      <div class="col-12 col-md-6 col-lg-3 p-0">
+        <div class="card m-2">
+          <img src="images/image.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              A picture I took of a stream up north. Rainbow falls, Kerikeri.
+            </p>
+          </div>
+        </div>
+      </div>
+    </template>
+    <script>
+      const cardList = document.querySelector("#card-list");
+      for (let i = 0; i < 8; i++) {
+        const newElement = document
+          .querySelector("#card-template")
+          .content.cloneNode(true);
+        cardList.appendChild(newElement);
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+html,
+body {
+  margin: 0;
+}
+
+body {
+  display: flex;
+}
+
+.animation-box {
+  width: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.coloured-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: drop-rise;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+
+  animation-timing-function: ease-in;
+}
+
+@keyframes drop-rise {
+  from {
+    top: 0px;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    top: calc(100vh - 100px);
+    background-color: yellow;
+  }
+  75% {
+    background-color: darkgreen;
+  }
+  to {
+    top: 0px;
+    background-color: red;
+  }
+}
+
+.box-1 {
+  animation-delay: 1s;
+}
+.box-2 {
+  animation-delay: 1.1s;
+}
+.box-3 {
+  animation-delay: 1.2s;
+}
+.box-4 {
+  animation-delay: 1.3s;
+}
+.box-5 {
+  animation-delay: 1.4s;
+}
+.box-6 {
+  animation-delay: 1.5s;
+}
